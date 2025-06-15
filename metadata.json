@@ -1,5 +1,6 @@
 {
   "name": "Daya's Matrimonial Portfolio",
   "description": "A modern and elegant marriage portfolio for Dayanand Kumar (Daya), showcasing his personal, family, educational, and professional details.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "prompt": ""
 }

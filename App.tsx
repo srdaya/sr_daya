@@ -42,7 +42,7 @@ const profileData: ProfileData = {
   height: "5'8\"",
   religion: "Hindu",
   motherTongue: "Hindi",
-  nativePlace: "Village Daulatpur, District Jamui",
+  nativePlace: "Village - Daulatpur, District - Jamui",
   fatherName: "Gyandev Pandit",
   motherName: "Sulekha Devi",
   siblings: ["One elder sister (married)", "One younger brother"],
@@ -78,7 +78,7 @@ const profileData: ProfileData = {
     "Listening to Songs",
     "Working out when not coding"
   ],
-  profileImageUrl: "https://res.cloudinary.com/dl64mavdp/image/upload/v1749928892/WhatsApp_Image_2025-06-15_at_00.40.54_45b6143b_k2tiy3.jpg", 
+  profileImageUrl: "https://res.cloudinary.com/djdfm99ja/image/upload/v1749961350/Black_Pattern_Minimalist_LinkedIn_Profile_Picture_yqynwx.png", 
 };
 
 const calculateAge = (dobString: string): number => {

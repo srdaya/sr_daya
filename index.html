@@ -6,20 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daya's Matrimonial Portfolio</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>">
+  
+  <!-- Preconnect to Google Fonts servers -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Import Exo 2 and Tomorrow fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Tomorrow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Tomorrow', 'Exo 2', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
   <style>
     html {
       scroll-behavior: smooth;
     }
+    /* Apply 'Tomorrow' as the primary font. 
+       This will be reinforced by Tailwind config and direct application. */
     body {
-      /* Changed to Tahoma for Windows XP feel, with fallbacks */
-      font-family: 'Tahoma', Verdana, Arial, sans-serif; 
+      font-family: 'Tomorrow', 'Exo 2', sans-serif; 
     }
-    /* Import Playfair Display for headings */
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
     
-    h1, h2, h3 {
-        font-family: 'Playfair Display', serif; /* Elegant serif for headings, kept for style */
+    h1, h2, h3, h4, h5, h6 {
+      /* Explicitly set 'Tomorrow' for headings, ensuring consistency. */
+      font-family: 'Tomorrow', 'Exo 2', sans-serif; 
     }
   </style>
 <script type="importmap">
