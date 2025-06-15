@@ -10,6 +10,7 @@ interface ProfileData {
   fullName: string;
   nickname: string;
   tagline: string;
+  shortBio: string; // Added shortBio
   dob: string;
   height: string;
   religion: string;
@@ -19,7 +20,7 @@ interface ProfileData {
   motherName: string;
   siblings: string[];
   familyValues: string;
-  education: string[]; // Changed to array
+  education: string[];
   profession: {
     title: string;
     intro: string;
@@ -30,7 +31,7 @@ interface ProfileData {
   };
   skillsAndInterests: string[];
   languages: { name: string; proficiency: string }[];
-  hobbiesAndLifestyle: string[]; // Added hobbies
+  hobbiesAndLifestyle: string[];
   profileImageUrl: string;
 }
 
@@ -38,6 +39,7 @@ const profileData: ProfileData = {
   fullName: "Dayanand Kumar",
   nickname: "Daya",
   tagline: "I believe in building things with heart, code, and clarity.",
+  shortBio: "A creative technologist and lifelong learner, passionate about crafting innovative digital experiences and exploring the intersection of design and functionality. I thrive on bringing ideas to life and continuously seeking growth, both personally and professionally.", // Added placeholder shortBio
   dob: "April 1, 1999",
   height: "5'8\"",
   religion: "Hindu",
@@ -105,6 +107,7 @@ const App: React.FC = () => {
 
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
         <Section title="About Me" icon={<UserCircleIcon className="w-8 h-8 text-cyan-400" />}>
+          <p className="text-lg mb-6 italic text-slate-300">{profileData.shortBio}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 text-lg">
             <DetailItem icon={<CalendarDaysIcon className="w-5 h-5 text-cyan-400" />} label="Age" value={`${age} Years (Born ${new Date(profileData.dob).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric'})})`} />
             <DetailItem icon={<DevicePhoneMobileIcon className="w-5 h-5 text-cyan-400" />} label="Height" value={profileData.height} />
